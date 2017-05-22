@@ -27,6 +27,9 @@
 	<!-- 静态资源配置 -->
 	<mvc:resources mapping="/resources/**" location="/resources/"/>
 
+	<mvc:resources mapping="/vendor/**" location="WEB-INF/static/vendor/"/>
+	<mvc:resources mapping="/dist/**" location="WEB-INF/static/dist/"/>
+
 	<!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- 前缀 -->

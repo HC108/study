@@ -7,4 +7,5 @@ import com.molyo.intergrationjannie.model.User;
  */
 public interface IUserService {
     public User getUserById(Long userId);
+    public User findByUsername(String username);
 }

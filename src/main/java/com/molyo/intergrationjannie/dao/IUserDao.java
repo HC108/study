@@ -11,6 +11,8 @@ public interface IUserDao {
 
     User selectByPrimaryKey(Long id);
 
+    User findByUsername(String username);
+
     Long updateByPrimaryKeySelective(User record);
 
     Long updateByPrimaryKey(User record);

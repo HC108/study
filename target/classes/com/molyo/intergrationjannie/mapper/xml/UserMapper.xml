@@ -3,68 +3,75 @@
 <mapper namespace="com.molyo.intergrationjannie.dao.IUserDao" >
   <resultMap id="BaseResultMap" type="com.molyo.intergrationjannie.model.User" >
     <id column="id" property="id" jdbcType="BIGINT" />
-    <result column="loginName" property="loginName" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, loginName, password
+    id, username, password
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
-    from user
+    from sys_user
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from user
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
-  <insert id="insert" parameterType="com.molyo.intergrationjannie.model.User" >
-    insert into user (id, loginName, password
-      )
-    values (#{id,jdbcType=BIGINT}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.molyo.intergrationjannie.model.User" >
-    insert into user
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        id,
-      </if>
-      <if test="loginName != null" >
-        loginName,
-      </if>
-      <if test="password != null" >
-        password,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        #{id,jdbcType=BIGINT},
-      </if>
-      <if test="loginName != null" >
-        #{loginName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null" >
-        #{password,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.molyo.intergrationjannie.model.User" >
-    update user
-    <set >
-      <if test="loginName != null" >
-        loginName = #{loginName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null" >
-        password = #{password,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.molyo.intergrationjannie.model.User" >
-    update user
-    set loginName = #{loginName,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
+  <select id="findByUsername" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from sys_user
+    where username = #{username,jdbcType=VARCHAR}
+  </select>
+
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >-->
+    <!--delete from user-->
+    <!--where id = #{id,jdbcType=BIGINT}-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="com.molyo.intergrationjannie.model.User" >-->
+    <!--insert into user (id, loginName, password-->
+      <!--)-->
+    <!--values (#{id,jdbcType=BIGINT}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="com.molyo.intergrationjannie.model.User" >-->
+    <!--insert into user-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides="," >-->
+      <!--<if test="id != null" >-->
+        <!--id,-->
+      <!--</if>-->
+      <!--<if test="loginName != null" >-->
+        <!--loginName,-->
+      <!--</if>-->
+      <!--<if test="password != null" >-->
+        <!--password,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides="," >-->
+      <!--<if test="id != null" >-->
+        <!--#{id,jdbcType=BIGINT},-->
+      <!--</if>-->
+      <!--<if test="loginName != null" >-->
+        <!--#{loginName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="password != null" >-->
+        <!--#{password,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="com.molyo.intergrationjannie.model.User" >-->
+    <!--update user-->
+    <!--<set >-->
+      <!--<if test="loginName != null" >-->
+        <!--loginName = #{loginName,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="password != null" >-->
+        <!--password = #{password,jdbcType=VARCHAR},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where id = #{id,jdbcType=BIGINT}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="com.molyo.intergrationjannie.model.User" >-->
+    <!--update user-->
+    <!--set loginName = #{loginName,jdbcType=VARCHAR},-->
+      <!--password = #{password,jdbcType=VARCHAR}-->
+    <!--where id = #{id,jdbcType=BIGINT}-->
+  <!--</update>-->
 </mapper>
