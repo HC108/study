@@ -68,6 +68,9 @@ public class AccountController{
 	 */
 	@RequestMapping(value ="/login",method = RequestMethod.POST)
 	public String login(HttpServletRequest request,ModelAndView modelAndView) {
+
+		logger.info("principal is : " + SecurityUtils.getSubject().getPrincipal());
+
 		String errorClassName = (String)request.getAttribute("shiroLoginFailure");
 		logger.info("errorClassName is :" + errorClassName);
 		if(UnknownAccountException.class.getName().equals(errorClassName)) {

@@ -33,7 +33,7 @@
 	<!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- 前缀 -->
-		<property name="prefix" value="/WEB-INF/static/pages" />
+		<property name="prefix" value="/WEB-INF/static/pages/" />
 		<!-- 后缀 -->
 		<property name="suffix" value=".jsp" />
 	</bean>

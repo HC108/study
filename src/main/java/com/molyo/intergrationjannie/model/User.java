@@ -7,6 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
+    public String getTableName() {
+        return tableName;
+    }
+
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
+    }
+
+    private String tableName = "sys_user";
     private Long id; //编号
     private Long organizationId; //所属公司
     private String username; //用户名
@@ -14,6 +23,10 @@ public class User {
     private String salt; //加密密码的盐
     private List<Long> roleIds; //拥有的角色列表
     private Boolean locked = Boolean.FALSE;
+
+    getAllFieldStr() {
+
+    }
 
     public User() {
     }

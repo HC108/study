@@ -17,7 +17,7 @@ public class UserServiceImpl implements IUserService{
     @Override
     public User getUserById(Long userId) {
         // TODO Auto-generated method stub
-        return this.userDao.selectByPrimaryKey(userId);
+        return this.userDao.selectByPrimaryKey(userId, new User());
     }
     @Override
     public User findByUsername(String username) {
