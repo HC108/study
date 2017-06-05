@@ -292,7 +292,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="/user/index"><i class="fa fa-table fa-fw"></i> 用户管理</a>
+                            <a href="/user/showUser?id=1"><i class="fa fa-table fa-fw"></i> 用户管理</a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>

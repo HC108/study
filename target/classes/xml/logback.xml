@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false" scan="true" scanPeriod="1000 seconds">
 	<timestamp key="date" datePattern="yyyyMMdd" />
+	<appender name="LOGSTASH" class="com.cwbase.logback.RedisAppender">
+		<source>IntegrationJannie</source>
+		<type>dev</type>
+		<host>10.73.128.158</host>
+		<key>logstash</key>
+		<tags>dev</tags>
+		<mdc>true</mdc>
+		<location>true</location>
+		<callerStackIndex>0</callerStackIndex>
+	</appender>
 	<!-- Output to Console -->
 	<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
@@ -24,10 +34,11 @@
 		</encoder>
 	</appender>
 	<!-- 打印级别，大小写无关：TRACE, DEBUG, INFO, WARN, ERROR, ALL 和  OFF 默认是DEBUG -->
-	<root level="ERROR">
+	<root level="INFO">
 		<appender-ref ref="Console" />
 		<appender-ref ref="File" />
+		<appender-ref ref="LOGSTASH" />
 	</root>
-	<logger name="org.springframework" level="ERROR" />
-	<logger name="com.molyo.intergrationjannie" level="DEBUG" />
+	<logger name="org.springframework" level="INFO" />
+	<logger name="com.molyo.intergrationjannie" level="INFO" />
 </configuration>

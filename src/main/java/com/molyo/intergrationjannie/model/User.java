@@ -24,9 +24,6 @@ public class User {
     private List<Long> roleIds; //拥有的角色列表
     private Boolean locked = Boolean.FALSE;
 
-    getAllFieldStr() {
-
-    }
 
     public User() {
     }

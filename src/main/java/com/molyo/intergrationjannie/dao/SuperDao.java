@@ -22,7 +22,7 @@ public interface SuperDao<T> {
 
     public abstract List<T> getAll();
 
-    @Select("select * from ${t.tableName} where id = #{id}" limit )
+    @Select("select * from ${t.tableName} where id = #{id}")
     public abstract T selectByPrimaryKey(@Param("id") long id, @Param("t")T t);
 
 //    @Insert("insert into T values(#{name})")

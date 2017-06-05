@@ -61,6 +61,7 @@ public class AccountController{
 	 */
 	@RequestMapping(value ="/toLogin", method = RequestMethod.GET)
 	public String toLogin(HttpServletRequest request,ModelAndView modelAndView) {
+		logger.info("jannie my little girl");
 		return "/login";
 	}
 	/**

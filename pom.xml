@@ -69,6 +69,12 @@
             <artifactId>logback-ext-spring</artifactId>
             <version>0.1.4</version>
         </dependency>
+        <!--logstash begin -->
+        <dependency>
+            <groupId>com.cwbase</groupId>
+            <artifactId>logback-redis-appender</artifactId>
+            <version>1.1.5</version>
+        </dependency>
         <!-- logback+slf4j end-->
         <!-- kisso begin -->
         <!--<dependency>-->
