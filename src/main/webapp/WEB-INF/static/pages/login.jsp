@@ -40,8 +40,9 @@
                     <div class="panel-heading">
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
+                    <div class="error">${error}</div>
                     <div class="panel-body">
-                        <form id="loginForm" role="form" action="/login" method="post">
+                        <form id="loginForm" action="" method="post">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Name" name="username" type="email" autofocus>

@@ -28,4 +28,9 @@ public class UserController extends SuperController{
         model.addAttribute("user", user);
         return "showUser";
     }
+
+    @RequestMapping("/userlist")
+    public String userList(HttpServletRequest request, Model model){
+        return "userlist";
+    }
 }

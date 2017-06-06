@@ -88,14 +88,23 @@
         </property>
         <property name="filterChainDefinitions">
             <value>
-                /index.jsp = anon
-                /unauthorized.jsp = anon
+                /toLogin = anon
                 /login = authc
+                /css/** = anon
+                /js/** = anon
+                /img/** = anon
+                /vendor/** = anon
+                /dist/** = anon
                 /logout = logout
-
+                /authenticated = authc
+                /** = user
             </value>
         </property>
     </bean>
+
+    <!-- Shiro生命周期处理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
 
     <!--<aop:config proxy-target-class="true"></aop:config>-->
     <!--<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">-->

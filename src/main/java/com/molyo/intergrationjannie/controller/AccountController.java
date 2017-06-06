@@ -26,6 +26,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -48,6 +50,24 @@ public class AccountController{
 	@Resource
 	private IUserService userService;
 
+	@RequestMapping("/")
+	public String index(Model model) {
+		logger.info("log into index");
+//		Set<String> permissions = userService.findPermissions(loginUser.getUsername());
+//		List<Resource> menus = resourceService.findMenus(permissions);
+//		model.addAttribute("menus", menus);
+		return "index";
+	}
+
+	@RequestMapping(value ="/", method = RequestMethod.POST)
+	public String postIndex(Model model) {
+		logger.info("log into postIndex");
+//		Set<String> permissions = userService.findPermissions(loginUser.getUsername());
+//		List<Resource> menus = resourceService.findMenus(permissions);
+//		model.addAttribute("menus", menus);
+		return "index";
+	}
+
 	@RequestMapping("/showUser")
 	public String toIndex(HttpServletRequest request,Model model){
 		long userId = Integer.parseInt(request.getParameter("id"));
@@ -62,16 +82,16 @@ public class AccountController{
 	@RequestMapping(value ="/toLogin", method = RequestMethod.GET)
 	public String toLogin(HttpServletRequest request,ModelAndView modelAndView) {
 		logger.info("jannie my little girl");
-		return "/login";
+		return "login";
 	}
 	/**
 	 * 登录
 	 */
-	@RequestMapping(value ="/login",method = RequestMethod.POST)
+//	@RequestMapping(value ="/login",method = RequestMethod.POST)
+	@RequestMapping(value ="/login")
 	public String login(HttpServletRequest request,ModelAndView modelAndView) {
-
-		logger.info("principal is : " + SecurityUtils.getSubject().getPrincipal());
-
+        Object username = SecurityUtils.getSubject().getPrincipal();
+		logger.info("principal is : " +  username);
 		String errorClassName = (String)request.getAttribute("shiroLoginFailure");
 		logger.info("errorClassName is :" + errorClassName);
 		if(UnknownAccountException.class.getName().equals(errorClassName)) {
@@ -86,13 +106,9 @@ public class AccountController{
 		}
 
 		//request.getRequestDispatcher("/WEB-INF/jsp/formfilterlogin.jsp").forward(req, resp);
-
-
-
-		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		logger.info("username is:" + username + ",password is:" + password);
-		return "/index";
+		return "/login";
 	}
 
 	/**
