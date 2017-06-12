@@ -33,4 +33,10 @@ public class UserController extends SuperController{
     public String userList(HttpServletRequest request, Model model){
         return "userlist";
     }
+
+    @RequestMapping("/add")
+    public String add(User user, HttpServletRequest request, Model model){
+        logger.info("" + user.getUsername() + "," + user.getPassword()+ "," + user.getOrganizationId() + "," + user.getRoleIdsStr() + "," + user.getSalt());
+        return "userlist";
+    }
 }
