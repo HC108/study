@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IntegrationJannie.iml" filepath="$PROJECT_DIR$/IntegrationJannie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JannieFramework/JannieFramework.iml" filepath="$PROJECT_DIR$/JannieFramework/JannieFramework.iml" />
+    </modules>
+  </component>
+</project>

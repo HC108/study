@@ -6,7 +6,6 @@
         <artifactId>JannieFramework</artifactId>
         <groupId>com.molyo</groupId>
         <version>1.0.0</version>
-        <relativePath>../JannieFramework/pom.xml</relativePath>
     </parent>
 
     <groupId>com.molyo</groupId>
