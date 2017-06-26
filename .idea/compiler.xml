@@ -8,11 +8,73 @@
         <outputRelativeToContentRoot value="true" />
         <module name="IntegrationJannie" />
         <module name="JannieFramework" />
+        <module name="shiro-example-chapter10" />
+        <module name="shiro-example-chapter11" />
+        <module name="shiro-example-chapter12" />
+        <module name="shiro-example-chapter13" />
+        <module name="shiro-example-chapter14" />
+        <module name="shiro-example-chapter15-client" />
+        <module name="shiro-example-chapter15-server" />
+        <module name="shiro-example-chapter16" />
+        <module name="shiro-example-chapter17-client" />
+        <module name="shiro-example-chapter17-server" />
+        <module name="shiro-example-chapter18" />
+        <module name="shiro-example-chapter19" />
+        <module name="shiro-example-chapter2" />
+        <module name="shiro-example-chapter20" />
+        <module name="shiro-example-chapter21" />
+        <module name="shiro-example-chapter22" />
+        <module name="shiro-example-chapter23-app1" />
+        <module name="shiro-example-chapter23-app2" />
+        <module name="shiro-example-chapter23-client" />
+        <module name="shiro-example-chapter23-core" />
+        <module name="shiro-example-chapter23-nginx" />
+        <module name="shiro-example-chapter23-server" />
+        <module name="shiro-example-chapter24" />
+        <module name="shiro-example-chapter3" />
+        <module name="shiro-example-chapter4" />
+        <module name="shiro-example-chapter5" />
+        <module name="shiro-example-chapter6" />
+        <module name="shiro-example-chapter7" />
+        <module name="shiro-example-chapter8" />
+        <module name="shiro-example-chapter9" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="IntegrationJannie" target="1.8" />
       <module name="JannieFramework" target="1.5" />
+      <module name="shiro-example" target="1.5" />
+      <module name="shiro-example-chapter10" target="1.5" />
+      <module name="shiro-example-chapter11" target="1.5" />
+      <module name="shiro-example-chapter12" target="1.5" />
+      <module name="shiro-example-chapter13" target="1.5" />
+      <module name="shiro-example-chapter14" target="1.5" />
+      <module name="shiro-example-chapter15-client" target="1.5" />
+      <module name="shiro-example-chapter15-server" target="1.5" />
+      <module name="shiro-example-chapter16" target="1.5" />
+      <module name="shiro-example-chapter17-client" target="1.5" />
+      <module name="shiro-example-chapter17-server" target="1.5" />
+      <module name="shiro-example-chapter18" target="1.5" />
+      <module name="shiro-example-chapter19" target="1.5" />
+      <module name="shiro-example-chapter2" target="1.5" />
+      <module name="shiro-example-chapter20" target="1.5" />
+      <module name="shiro-example-chapter21" target="1.5" />
+      <module name="shiro-example-chapter22" target="1.5" />
+      <module name="shiro-example-chapter23-app1" target="1.5" />
+      <module name="shiro-example-chapter23-app2" target="1.5" />
+      <module name="shiro-example-chapter23-client" target="1.5" />
+      <module name="shiro-example-chapter23-core" target="1.5" />
+      <module name="shiro-example-chapter23-nginx" target="1.5" />
+      <module name="shiro-example-chapter23-pom" target="1.5" />
+      <module name="shiro-example-chapter23-server" target="1.5" />
+      <module name="shiro-example-chapter24" target="1.5" />
+      <module name="shiro-example-chapter3" target="1.5" />
+      <module name="shiro-example-chapter4" target="1.5" />
+      <module name="shiro-example-chapter5" target="1.5" />
+      <module name="shiro-example-chapter6" target="1.5" />
+      <module name="shiro-example-chapter7" target="1.5" />
+      <module name="shiro-example-chapter8" target="1.5" />
+      <module name="shiro-example-chapter9" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

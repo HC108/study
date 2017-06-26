@@ -4,6 +4,38 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IntegrationJannie.iml" filepath="$PROJECT_DIR$/IntegrationJannie.iml" />
       <module fileurl="file://$PROJECT_DIR$/JannieFramework/JannieFramework.iml" filepath="$PROJECT_DIR$/JannieFramework/JannieFramework.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example.iml" filepath="E:/学习源码/shiro-example/shiro-example.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter10/shiro-example-chapter10.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter10/shiro-example-chapter10.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter11/shiro-example-chapter11.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter11/shiro-example-chapter11.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter12/shiro-example-chapter12.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter12/shiro-example-chapter12.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter13/shiro-example-chapter13.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter13/shiro-example-chapter13.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter14/shiro-example-chapter14.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter14/shiro-example-chapter14.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter15-client/shiro-example-chapter15-client.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter15-client/shiro-example-chapter15-client.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter15-server/shiro-example-chapter15-server.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter15-server/shiro-example-chapter15-server.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter16/shiro-example-chapter16.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter16/shiro-example-chapter16.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter17-client/shiro-example-chapter17-client.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter17-client/shiro-example-chapter17-client.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter17-server/shiro-example-chapter17-server.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter17-server/shiro-example-chapter17-server.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter18/shiro-example-chapter18.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter18/shiro-example-chapter18.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter19/shiro-example-chapter19.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter19/shiro-example-chapter19.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter2/shiro-example-chapter2.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter2/shiro-example-chapter2.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter20/shiro-example-chapter20.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter20/shiro-example-chapter20.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter21/shiro-example-chapter21.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter21/shiro-example-chapter21.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter22/shiro-example-chapter22.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter22/shiro-example-chapter22.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-app1/shiro-example-chapter23-app1.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-app1/shiro-example-chapter23-app1.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-app2/shiro-example-chapter23-app2.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-app2/shiro-example-chapter23-app2.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-client/shiro-example-chapter23-client.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-client/shiro-example-chapter23-client.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-core/shiro-example-chapter23-core.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-core/shiro-example-chapter23-core.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-nginx/shiro-example-chapter23-nginx.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-nginx/shiro-example-chapter23-nginx.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-pom/shiro-example-chapter23-pom.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-pom/shiro-example-chapter23-pom.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter23-server/shiro-example-chapter23-server.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter23-server/shiro-example-chapter23-server.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter24/shiro-example-chapter24.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter24/shiro-example-chapter24.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter3/shiro-example-chapter3.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter3/shiro-example-chapter3.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter4/shiro-example-chapter4.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter4/shiro-example-chapter4.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter5/shiro-example-chapter5.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter5/shiro-example-chapter5.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter6/shiro-example-chapter6.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter6/shiro-example-chapter6.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter7/shiro-example-chapter7.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter7/shiro-example-chapter7.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter8/shiro-example-chapter8.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter8/shiro-example-chapter8.iml" />
+      <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter9/shiro-example-chapter9.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter9/shiro-example-chapter9.iml" />
     </modules>
   </component>
 </project>

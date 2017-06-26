@@ -2,31 +2,34 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter10" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter12" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter13" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter14" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter15-client" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter15-server" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter16" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter17-client" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter17-server" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter18" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter19" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter21" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter22" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter24" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter7" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter8" />
+    <file type="web" url="file://E:/学习源码/shiro-example/shiro-example-chapter9" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/JannieFramework/pom.xml" />
+        <option value="E:/学习源码/shiro-example/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

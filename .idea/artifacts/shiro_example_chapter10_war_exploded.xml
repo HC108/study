@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shiro-example-chapter10:war exploded">
+    <output-path>E:/学习源码/shiro-example/shiro-example-chapter10/target/chapter10</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shiro-example-chapter10" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="E:/学习源码/shiro-example/shiro-example-chapter10/target/chapter10/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="shiro-example-chapter10/web/Web" />
+    </root>
+  </artifact>
+</component>
