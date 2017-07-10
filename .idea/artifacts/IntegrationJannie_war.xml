@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="IntegrationJannie:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
+    <output-path>$PROJECT_DIR$/IntegrationJannie/target</output-path>
     <root id="archive" name="test2.war">
       <element id="artifact" artifact-name="IntegrationJannie:war exploded" />
     </root>
