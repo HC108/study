@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="IntegrationJannie" />
-        <module name="JannieFramework" />
+        <module name="IntegrationJannie-commons" />
         <module name="shiro-example-chapter10" />
         <module name="shiro-example-chapter11" />
         <module name="shiro-example-chapter12" />
@@ -42,6 +42,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="IntegrationJannie" target="1.8" />
+      <module name="IntegrationJannie-commons" target="1.5" />
       <module name="JannieFramework" target="1.5" />
       <module name="shiro-example" target="1.5" />
       <module name="shiro-example-chapter10" target="1.5" />

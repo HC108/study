@@ -24,6 +24,9 @@
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.3.2" />
           <element id="library" level="project" name="Maven: junit:junit:4.12" />
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="archive" name="IntegrationJannie-commons-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="IntegrationJannie-commons" />
+          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">

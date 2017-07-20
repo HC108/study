@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IntegrationJannie.iml" filepath="$PROJECT_DIR$/IntegrationJannie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntegrationJannie-commons/IntegrationJannie-commons.iml" filepath="$PROJECT_DIR$/IntegrationJannie-commons/IntegrationJannie-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/JannieFramework/JannieFramework.iml" filepath="$PROJECT_DIR$/JannieFramework/JannieFramework.iml" />
       <module fileurl="file://E:/学习源码/shiro-example/shiro-example.iml" filepath="E:/学习源码/shiro-example/shiro-example.iml" />
       <module fileurl="file://E:/学习源码/shiro-example/shiro-example-chapter10/shiro-example-chapter10.iml" filepath="E:/学习源码/shiro-example/shiro-example-chapter10/shiro-example-chapter10.iml" />

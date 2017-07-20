@@ -1,7 +1,7 @@
 package com.molyo.intergrationjannie.model;
 
+import com.molyo.intergrationjannie.commons.utils.StringUtils;
 import org.apache.shiro.util.CollectionUtils;
-import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
