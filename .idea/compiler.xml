@@ -43,7 +43,7 @@
     <bytecodeTargetLevel>
       <module name="IntegrationJannie" target="1.8" />
       <module name="IntegrationJannie-commons" target="1.5" />
-      <module name="JannieFramework" target="1.5" />
+      <module name="JannieFramework" target="1.8" />
       <module name="shiro-example" target="1.5" />
       <module name="shiro-example-chapter10" target="1.5" />
       <module name="shiro-example-chapter11" target="1.5" />
