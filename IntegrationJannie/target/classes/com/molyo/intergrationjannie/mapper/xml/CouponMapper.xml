@@ -34,7 +34,7 @@
   </select>
 
   <update id="updateByPrimaryKey" parameterType="com.molyo.intergrationjannie.model.CouponModel" >
-    update coupon  isused ip fetchtime
+    update coupon
     set mobile = #{mobile,jdbcType=VARCHAR},
     isused = #{isused,jdbcType=VARCHAR},
     ip = #{ip,jdbcType=VARCHAR},

@@ -5,6 +5,7 @@ import com.molyo.intergrationjannie.service.ICouponService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,8 +23,10 @@ public class CouponController {
     @Resource
     private ICouponService couponService;
 
+    @Transactional
     @RequestMapping("/success")
-    public String toIndex(HttpServletRequest request, Model model){
+    public String toIndex(HttpServletRequest request, Model model) throws Exception {
+
         String ip = request.getHeader("x-forwarded-for");
         if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)){
             ip = request.getHeader("Proxy-Client-IP");
@@ -38,6 +41,7 @@ public class CouponController {
 
         CouponModel havedCouponModel = couponService.selectByIp(ip);
         if(havedCouponModel != null) {
+            logger.info("");
             model.addAttribute("reason","抱歉，一个IP仅允许获得一个兑换码");
             return "nocoupon";
         }
@@ -47,6 +51,7 @@ public class CouponController {
             model.addAttribute("reason","抱歉，您来晚了一步，活动礼物已派送完");
             return "nocoupon";
         }
+        newCouponModel.setIp(ip);
         newCouponModel.setIsused("1");
         newCouponModel.setFetchtime(new Date().toString());
         couponService.updateByPrimaryKey(newCouponModel);

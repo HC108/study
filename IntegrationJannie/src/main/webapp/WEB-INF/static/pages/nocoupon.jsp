@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    ${coupon.code}
+    ${reason}
 </body>
 </html>
