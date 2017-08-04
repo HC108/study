@@ -6,7 +6,7 @@ import org.apache.shiro.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class UserModel {
     public String getTableName() {
         return tableName;
     }
@@ -25,10 +25,10 @@ public class User {
     private Boolean locked = Boolean.FALSE;
 
 
-    public User() {
+    public UserModel() {
     }
 
-    public User(String username, String password) {
+    public UserModel(String username, String password) {
         this.username = username;
         this.password = password;
     }
@@ -127,7 +127,7 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        User user = (User) o;
+        UserModel user = (UserModel) o;
 
         if (id != null ? !id.equals(user.id) : user.id != null) return false;
 

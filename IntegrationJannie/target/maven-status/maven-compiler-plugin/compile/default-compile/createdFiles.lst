@@ -1,4 +1,7 @@
-com\molyo\intergrationjannie\model\User.class
+com\molyo\intergrationjannie\model\CouponModel.class
+com\molyo\intergrationjannie\service\impl\CouponServiceImpl.class
+com\molyo\intergrationjannie\model\UserModel.class
+com\molyo\intergrationjannie\service\ICouponService.class
 com\molyo\intergrationjannie\controller\AccountController.class
 com\molyo\intergrationjannie\shiro\RetryLimitHashedCredentialsMatcher.class
 com\molyo\intergrationjannie\service\IUserService.class
@@ -8,5 +11,7 @@ com\molyo\intergrationjannie\commons\utils\StringUtils.class
 com\molyo\intergrationjannie\controller\UserController.class
 com\molyo\intergrationjannie\service\impl\UserServiceImpl.class
 com\molyo\intergrationjannie\service\SuperService.class
+com\molyo\intergrationjannie\controller\CouponController.class
+com\molyo\intergrationjannie\dao\ICouponDao.class
 com\molyo\intergrationjannie\dao\IUserDao.class
 com\molyo\intergrationjannie\controller\SuperController.class

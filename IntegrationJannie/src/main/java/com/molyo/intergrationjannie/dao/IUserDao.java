@@ -1,9 +1,9 @@
 package com.molyo.intergrationjannie.dao;
 
-import com.molyo.intergrationjannie.model.User;
+import com.molyo.intergrationjannie.model.UserModel;
 
 
-public interface IUserDao extends SuperDao<User>{
+public interface IUserDao extends SuperDao<UserModel>{
 
 //    Long deleteByPrimaryKey(Long id);
 //
@@ -13,7 +13,7 @@ public interface IUserDao extends SuperDao<User>{
 //
 //    User selectByPrimaryKey(Long id);
 //
-     public abstract User findByUsername(String username);
+     public abstract UserModel findByUsername(String username);
 //
 //    Long updateByPrimaryKeySelective(User record);
 //

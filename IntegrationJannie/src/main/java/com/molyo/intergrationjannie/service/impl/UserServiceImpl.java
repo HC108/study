@@ -3,7 +3,7 @@ package com.molyo.intergrationjannie.service.impl;
 import javax.annotation.Resource;
 
 import com.molyo.intergrationjannie.dao.IUserDao;
-import com.molyo.intergrationjannie.model.User;
+import com.molyo.intergrationjannie.model.UserModel;
 import com.molyo.intergrationjannie.service.IUserService;
 import org.springframework.stereotype.Service;
 
@@ -15,12 +15,12 @@ public class UserServiceImpl implements IUserService{
     @Resource
     private IUserDao userDao;
     @Override
-    public User getUserById(Long userId) {
+    public UserModel getUserById(Long userId) {
         // TODO Auto-generated method stub
-        return this.userDao.selectByPrimaryKey(userId, new User());
+        return this.userDao.selectByPrimaryKey(userId, new UserModel());
     }
     @Override
-    public User findByUsername(String username) {
+    public UserModel findByUsername(String username) {
         return this.userDao.findByUsername(username);
     }
 }

@@ -1,7 +1,7 @@
 package com.molyo.intergrationjannie.controller;
 
 
-import com.molyo.intergrationjannie.model.User;
+import com.molyo.intergrationjannie.model.UserModel;
 import com.molyo.intergrationjannie.service.IUserService;
 import org.apache.commons.logging.LogFactory;
 import org.apache.shiro.SecurityUtils;
@@ -71,7 +71,7 @@ public class AccountController{
 	@RequestMapping("/showUser")
 	public String toIndex(HttpServletRequest request,Model model){
 		long userId = Integer.parseInt(request.getParameter("id"));
-		User user = this.userService.getUserById(userId);
+		UserModel user = this.userService.getUserById(userId);
 		model.addAttribute("user", user);
 		return "showUser";
 	}

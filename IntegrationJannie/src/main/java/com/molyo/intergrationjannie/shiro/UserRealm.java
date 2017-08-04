@@ -1,6 +1,6 @@
 package com.molyo.intergrationjannie.shiro;
 
-import com.molyo.intergrationjannie.model.User;
+import com.molyo.intergrationjannie.model.UserModel;
 import com.molyo.intergrationjannie.service.IUserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -34,7 +34,7 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 
         String username = (String)token.getPrincipal();
-        User user = null;
+        UserModel user = null;
         try{
             user = userService.findByUsername(username);
         }catch (Exception e) {

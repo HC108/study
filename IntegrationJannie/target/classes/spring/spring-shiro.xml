@@ -89,6 +89,7 @@
         </property>
         <property name="filterChainDefinitions">
             <value>
+                /coupon/success = anon
                 /toLogin = anon
                 /login = authc
                 /css/** = anon

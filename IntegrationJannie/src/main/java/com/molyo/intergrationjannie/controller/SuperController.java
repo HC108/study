@@ -15,13 +15,5 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class SuperController {
-    protected Logger logger = LoggerFactory.getLogger(this.getClass());
-    @Autowired
-    protected HttpServletRequest request;
-    @Autowired
-    protected HttpServletResponse response;
-    @Autowired
-    protected HttpSession session;
-    @Autowired
-    protected ServletContext application;
+
 }

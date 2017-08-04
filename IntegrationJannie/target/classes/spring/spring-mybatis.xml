@@ -53,6 +53,10 @@
         <property name="mapperInterface" value="com.molyo.intergrationjannie.dao.IUserDao" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
+    <bean id="couponDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.molyo.intergrationjannie.dao.ICouponDao" />
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
 
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
     <bean id="transactionManager"

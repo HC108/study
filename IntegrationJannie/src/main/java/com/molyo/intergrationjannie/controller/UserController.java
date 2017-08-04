@@ -1,6 +1,6 @@
 package com.molyo.intergrationjannie.controller;
 
-import com.molyo.intergrationjannie.model.User;
+import com.molyo.intergrationjannie.model.UserModel;
 import com.molyo.intergrationjannie.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +24,7 @@ public class UserController extends SuperController{
     @RequestMapping("/showUser")
     public String toIndex(HttpServletRequest request, Model model){
         long userId = Integer.parseInt(request.getParameter("id"));
-        User user = userService.getUserById(userId);
+        UserModel user = userService.getUserById(userId);
         model.addAttribute("user", user);
         return "showUser";
     }
@@ -35,7 +35,7 @@ public class UserController extends SuperController{
     }
 
     @RequestMapping("/add")
-    public String add(User user, HttpServletRequest request, Model model){
+    public String add(UserModel user, HttpServletRequest request, Model model){
         logger.info("" + user.getUsername() + "," + user.getPassword()+ "," + user.getOrganizationId() + "," + user.getRoleIdsStr() + "," + user.getSalt());
         return "userlist";
     }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.molyo.intergrationjannie.dao.IUserDao" >
-  <resultMap id="BaseResultMap" type="com.molyo.intergrationjannie.model.UserModel" >
-    <id column="id" property="id" jdbcType="BIGINT" />
-    <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="password" property="password" jdbcType="VARCHAR" />
-    <result column="organization_id" property="organizationId" jdbcType="BIGINT" />
-    <result column="salt" property="salt" jdbcType="VARCHAR" />
+<mapper namespace="com.molyo.intergrationjannie.dao.ICouponDao" >
+  <resultMap id="BaseResultMap" type="com.molyo.intergrationjannie.model.CouponModel" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="isused" property="isused" jdbcType="BIGINT" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
     <!--<result column="role_ids" property="roleIds" jdbcType="VARCHAR" />-->
-    <result column="locked" property="locked" jdbcType="TINYINT" />
+    <result column="fetchtime" property="fetchtime" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, organization_id, username, password, salt, locked
+    id, code, mobile, isused, ip, fetchtime
   </sql>
   <!--<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >-->
     <!--select -->
@@ -19,12 +19,28 @@
     <!--from sys_user-->
     <!--where id = #{id,jdbcType=BIGINT}-->
   <!--</select>-->
-  <select id="findByUsername" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectByIp" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select
     <include refid="Base_Column_List" />
-    from sys_user
-    where username = #{username,jdbcType=VARCHAR}
+    from coupon
+    where ip = #{ip,jdbcType=VARCHAR}
   </select>
+
+  <select id="findUnused" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List" />
+    from coupon
+    where isused = "0" LIMIT 1
+  </select>
+
+  <update id="updateByPrimaryKey" parameterType="com.molyo.intergrationjannie.model.CouponModel" >
+    update coupon  isused ip fetchtime
+    set mobile = #{mobile,jdbcType=VARCHAR},
+    isused = #{isused,jdbcType=VARCHAR},
+    ip = #{ip,jdbcType=VARCHAR},
+    fetchtime = #{fetchtime,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
 
   <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >-->
     <!--delete from user-->
